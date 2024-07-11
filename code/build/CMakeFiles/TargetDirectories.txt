@@ -1,0 +1,3 @@
+/home/wwj/wwj/huawei/hnu/code/build/CMakeFiles/rebuild_cache.dir
+/home/wwj/wwj/huawei/hnu/code/build/CMakeFiles/edit_cache.dir
+/home/wwj/wwj/huawei/hnu/code/build/CMakeFiles/main.dir
