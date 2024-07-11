@@ -7,12 +7,11 @@ cmake ../
 make
 cd ../../
 
-cd ./replay
-rm -rf 2024*
-cd ../
+echo $#  #sh参数个数
+echo $@  #所有参数
 
 
-# ./run.sh
+# 执行./run.sh ：执行所有地图，求平均分
 if [ $# -eq 0 ]; then
     # 设置循环次数和初始累加值
     iterations=10
@@ -34,7 +33,7 @@ if [ $# -eq 0 ]; then
 
     echo "平均分数为: $average"
 
-# ./run.sh x  
+# 执行./run.sh [1,10] ：执行指定地图 
 else
     ./LinuxRelease/PreliminaryJudge ./code/build/main -m ./LinuxRelease/maps/map$1.txt -l NONE -f 15
 fi
